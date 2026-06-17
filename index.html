@@ -7,55 +7,88 @@
     <title>謝秉宸的個人網站</title>
 
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Microsoft JhengHei", sans-serif;
             background-color: #f4f4f4;
+            line-height: 1.8;
         }
 
         header {
-            background-color: #333;
+            background: #333;
             color: white;
             text-align: center;
-            padding: 20px;
+            padding: 30px;
         }
 
         nav {
-            background-color: #555;
+            background: #555;
             text-align: center;
-            padding: 10px;
+            padding: 15px;
         }
 
         nav a {
             color: white;
             text-decoration: none;
             margin: 0 15px;
+            font-weight: bold;
         }
 
         nav a:hover {
-            text-decoration: underline;
+            color: #ffd700;
         }
 
         section {
+            max-width: 1000px;
+            margin: 20px auto;
             background: white;
-            margin: 15px;
-            padding: 20px;
+            padding: 25px;
             border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
 
         h2 {
             color: #333;
+            margin-bottom: 15px;
+            border-left: 5px solid #007bff;
+            padding-left: 10px;
         }
 
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 15px;
+        h3 {
+            margin-top: 15px;
+            color: #444;
         }
 
         ul {
-            line-height: 1.8;
+            margin-left: 25px;
+        }
+
+        .project-btn {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .project-btn:hover {
+            background: #218838;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -111,59 +144,69 @@
     <section id="assignments">
         <h2>作業區</h2>
 
-        <h3>作業一</h3>
-        <p>HTML 個人網站製作。</p>
-
-        <h3>作業二</h3>
-        <p>CSS 網頁排版與美化。</p>
-
-        <h3>作業三</h3>
-        <p>JavaScript 互動功能設計。</p>
-
-        <h3>期末專題</h3>
-
+        <h3>作業一：HTML</h3>
         <p>
-            專題名稱：私人圖庫密碼保護系統
+            完成 HTML Title、CSS Box Model 等 W3Schools 練習，
+            熟悉 HTML 標籤與網頁結構設計。
         </p>
 
+        <h3>作業二：CSS</h3>
         <p>
-            使用 Streamlit、Python 與 SQLite 製作的圖片加密管理系統。
+            完成 HTML Quiz 與 CSS Quiz，
+            學習版面配置、樣式設計與網頁美化技巧。
         </p>
 
-        <ul>
-            <li>首次使用可設定主密碼</li>
-            <li>登入後才能查看圖庫內容</li>
-            <li>支援圖片上傳與瀏覽</li>
-            <li>可刪除已上傳圖片</li>
-            <li>可修改登入密碼</li>
-            <li>使用 SQLite 儲存圖片資料</li>
-        </ul>
+        <h3>作業三：個人網站</h3>
+        <p>
+            使用 HTML、CSS 製作個人網站，
+            並透過 GitHub Pages 進行網站部署與發布。
+        </p>
     </section>
 
     <section id="project">
-        <h2>期末專題介紹</h2>
+        <h2>期末專題</h2>
 
         <h3>私人圖庫密碼保護系統</h3>
 
         <p>
-            本專題利用 Python Streamlit 建立一套具備密碼保護功能的私人圖庫系統，
-            使用者必須輸入正確密碼後才能進入系統。
+            本專題使用 Python、Streamlit 與 SQLite 開發，
+            提供使用者安全管理私人圖片的功能。
         </p>
 
-        <p>
-            系統支援圖片上傳、圖片瀏覽、圖片刪除以及密碼修改等功能，
-            並使用 SQLite 資料庫儲存資料。
-        </p>
+        <h3>系統功能</h3>
 
-        <h4>開發工具</h4>
+        <ul>
+            <li>首次使用設定主密碼</li>
+            <li>密碼驗證登入</li>
+            <li>圖片上傳功能</li>
+            <li>圖片瀏覽功能</li>
+            <li>圖片刪除功能</li>
+            <li>修改登入密碼</li>
+            <li>SQLite 資料庫儲存圖片資料</li>
+        </ul>
+
+        <h3>開發工具</h3>
 
         <ul>
             <li>Python</li>
             <li>Streamlit</li>
             <li>SQLite</li>
-            <li>VS Code</li>
+            <li>Visual Studio Code</li>
             <li>GitHub</li>
         </ul>
+
+        <h3>線上系統展示</h3>
+
+        <p>
+            點擊下方按鈕即可開啟本人開發之私人圖庫密碼保護系統。
+        </p>
+
+        <a href="https://app-gallery-cx57sgy52ctgkurr7r3rgd.streamlit.app"
+           target="_blank"
+           class="project-btn">
+           🔐 開啟期末專題系統
+        </a>
+
     </section>
 
     <section id="contact">
@@ -174,7 +217,7 @@
         <p>
             GitHub：
             <a href="https://github.com/4b2g0048" target="_blank">
-                點我查看
+                https://github.com/4b2g0048
             </a>
         </p>
     </section>
